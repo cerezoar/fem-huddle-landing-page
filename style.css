@@ -12,19 +12,88 @@ body {
 }
 
 .container {
-    max-width: 1440px;
-    padding: 3rem;
+    width: 90%;
+    margin: 2.5rem auto;
+}
+
+h1 {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 60px;
+}
+
+p {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 18px;
 }
 
 header {}
 
 header img {
-    width: 200px;
+    max-width: 200px;
 }
 
 main {
     display: flex;
+    gap: 2rem;
+    align-items: center;
 }
-main img {
-    width: 700px;
+main .illustration {
+    width: 100%;
+    height: auto;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.right button {
+    width: 33%;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    color: hsl(257, 40%, 49%);
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 18px;
+}
+
+footer {
+    text-align: right;
+    margin-top: 1rem;
+}
+
+@media (max-width:1200px) {
+    .container {
+        width: 90%;
+        margin: 2rem auto;
+        align-items: center;
+    }
+    
+    main {
+        flex-direction: column;
+        margin: 2rem auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .right {
+        align-self: center;
+        margin: 0 auto;
+    }
+    main h1, main p {
+        text-align: center;
+    }
+    .illustration {
+        text-align: center;
+    }
+    .right button {
+       align-self: center;
+    }
+
+    footer {
+        text-align: center;
+    }
 }
