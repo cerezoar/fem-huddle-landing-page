@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+}
+
+.container {
+    max-width: 1440px;
+    padding: 3rem;
+}
+
+header {}
+
+header img {
+    width: 200px;
+}
+
+main {
+    display: flex;
+}
+main img {
+    width: 700px;
+}
